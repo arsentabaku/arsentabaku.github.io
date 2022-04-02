@@ -1171,13 +1171,12 @@ textarea.form-control, textarea.form-control:focus {
   padding-bottom: 0;
 }
 
-
 .timeline-second-style .left-part {
   width: 30%;
   display: table-cell;
-  padding-right: 25px;
+  padding-right: 15px;
   min-height: 100%;
-  text-align: right;
+  text-align: center;
   vertical-align: top;
 }
 
@@ -1240,15 +1239,14 @@ textarea.form-control, textarea.form-control:focus {
 .timeline-second-style .item-period {
   color: #aaa;
   margin: 3px 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4em;
 }
 
 .timeline-second-style .item-company {
   display: block;
-  margin: 0 0 4px;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 250;
   line-height: 1.45em;
   color: #a5a6a7;
 }
