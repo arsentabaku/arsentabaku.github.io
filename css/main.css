@@ -660,11 +660,11 @@ input[type="submit"]:focus {
 /* Form controls */
 .form-group {
   position: relative;
-  margin: 0 0 21.5px;
+  margin: 0 0 33px;
 }
 .form-control,
 .form-control:focus {
-  height: 42px;
+  height: 55px;
 }
 
 .form-control,
@@ -699,6 +699,7 @@ textarea.form-control, textarea.form-control:focus {
   height: auto;
 }
 
+/* Contact form animation */
 .form-control ~ .form-control-border {
   content: "";
   position: absolute;
@@ -726,7 +727,7 @@ textarea.form-control, textarea.form-control:focus {
   height: 100%;
   z-index: 1;
   opacity: 1;
-  border-right-width: 2px;
+  border-right-width: 5px;
 }
 
 .has-error .form-control ~ .form-control-border {

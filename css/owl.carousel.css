@@ -12,6 +12,7 @@
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
+  font-style: italic;
   z-index: 1; }
   .owl-carousel .owl-stage {
     position: relative;
@@ -27,7 +28,7 @@
     position: relative;
     overflow: hidden;
     /* fix for flashing background */
-    -webkit-transform: translate3d(0px, 0px, 0px); }
+    -webkit-transform: translate3d(0px, 10px, 0px); }
   .owl-carousel .owl-item {
     position: relative;
     min-height: 1px;
@@ -82,8 +83,8 @@
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
