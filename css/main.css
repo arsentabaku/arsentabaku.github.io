@@ -660,11 +660,11 @@ input[type="submit"]:focus {
 /* Form controls */
 .form-group {
   position: relative;
-  margin: 0 0 21.5px;
+  margin: 0 0 33px;
 }
 .form-control,
 .form-control:focus {
-  height: 42px;
+  height: 55px;
 }
 
 .form-control,
@@ -699,6 +699,7 @@ textarea.form-control, textarea.form-control:focus {
   height: auto;
 }
 
+/* Contact form animation */
 .form-control ~ .form-control-border {
   content: "";
   position: absolute;
@@ -726,7 +727,7 @@ textarea.form-control, textarea.form-control:focus {
   height: 100%;
   z-index: 1;
   opacity: 1;
-  border-right-width: 2px;
+  border-right-width: 5px;
 }
 
 .has-error .form-control ~ .form-control-border {
@@ -975,6 +976,7 @@ textarea.form-control, textarea.form-control:focus {
   background-color: #333;
   padding: 20px 10px;
   border: 1px solid #444;
+  border-radius: 8px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1171,13 +1173,12 @@ textarea.form-control, textarea.form-control:focus {
   padding-bottom: 0;
 }
 
-
 .timeline-second-style .left-part {
   width: 30%;
   display: table-cell;
-  padding-right: 25px;
+  padding-right: 15px;
   min-height: 100%;
-  text-align: right;
+  text-align: center;
   vertical-align: top;
 }
 
@@ -1240,15 +1241,14 @@ textarea.form-control, textarea.form-control:focus {
 .timeline-second-style .item-period {
   color: #aaa;
   margin: 3px 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4em;
 }
 
 .timeline-second-style .item-company {
   display: block;
-  margin: 0 0 4px;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 250;
   line-height: 1.45em;
   color: #a5a6a7;
 }
@@ -1324,39 +1324,43 @@ textarea.form-control, textarea.form-control:focus {
 
 /* --- Skills Values --- */
 .skills-second-style .skill-container.skill-1 .skill-percentage {
-  width: 95%;
+  width: 10%;
 }
 
 .skills-second-style .skill-container.skill-2 .skill-percentage {
-  width: 65%;
+  width: 20%;
 }
 
 .skills-second-style .skill-container.skill-3 .skill-percentage {
-  width: 80%;
+  width: 30%;
 }
 
 .skills-second-style .skill-container.skill-4 .skill-percentage {
-  width: 90%;
+  width: 40%;
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 95%;
+  width: 50%;
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
-  width: 85%;
+  width: 60%;
 }
 
 .skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 100%;
+  width: 70%;
 }
 
 .skills-second-style .skill-container.skill-8 .skill-percentage {
-  width: 75%;
+  width: 80%;
 }
 
 .skills-second-style .skill-container.skill-9 .skill-percentage {
   width: 90%;
+}
+
+.skills-second-style .skill-container.skill-10 .skill-percentage {
+  width: 100%;
 }
 
 /* --- End of Skills Values --- */
