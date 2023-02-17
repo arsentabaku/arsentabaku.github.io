@@ -118,84 +118,90 @@
           <article class="post">
 
             <div class="post-thumbnail">
-              <img src="../img/blog/clean-code.jpg" alt="image">
+              <img src="../img/blog/nestjs.png" alt="image">
             </div>
 
             <div class="post-content">
               <header class="entry-header">
                 <div class="entry-meta entry-meta-top">
-                  <span><a href="#" rel="category tag">Frontend, Coding </a></span>
+                  <span><a href="#" rel="category tag">Backend, Coding </a></span>
                 </div>
-                <h2 class="entry-title">The Importance of Writing Clean Code </h2>
+                <h2 class="entry-title">NestJs Best Practices </h2>
               </header>
 
               <div class="entry-content">
                 <div class="row">
                   <div class=" col-xs-12 col-sm-12 ">
                     <div class="col-inner">
-                      <p> Writing clean code is crucial for software engineers. It helps to make the code more readable,
-                        maintainable, and easier to understand for both you and other developers. Clean code also makes
-                        it easier to debug and update the software in the future. Here are some principles to keep in
-                        mind when writing clean code:
-                      </p><br>
+                      <p> NestJS is a popular and powerful framework for building server-side applications using
+                        Node.js. It provides a solid foundation for building scalable and maintainable applications with
+                        a focus on modularity, testability, and extensibility. However, like any technology, there are
+                        best practices that developers should follow to get the most out of NestJS. In this blog, we
+                        will discuss some of the best practices that can help you build better NestJS applications.</p>
+                      <br>
 
-                      <h3 style="margin-bottom: 10px;">1. Keep it Simple</h3>
+                      <h3 style="margin-bottom: 10px;">1. Follow SOLID Principles</h3>
                       <p>
-                        Simplicity is key when writing clean code. Try to write code that is easy to understand and
-                        avoids unnecessary complexity. Avoid using complicated structures and patterns that are
-                        difficult to understand, and focus on writing code that is straightforward and easy to follow.
+                        SOLID principles are a set of guidelines that help developers build software that is
+                        maintainable, scalable, and easy to understand. Following them means creating modules that are
+                        responsible for a single task, using dependency injection and separating concerns between
+                        different layers of your application.
                       </p><br>
-                      <h3 style="margin-bottom: 10px;">2. Naming Conventions</h3>
+                      <h3 style="margin-bottom: 10px;">2. Use Proper Folder Structure</h3>
                       <p>
-                        Having consistent naming conventions is important for writing clean code. Use descriptive and
-                        meaningful names for variables, functions, and classes, and make sure they follow a consistent
-                        naming scheme. This makes the code easier to read and understand, and helps to reduce the chance
-                        of bugs and errors.
+                        A well-organized folder structure can help you keep your code clean and easy to navigate. NestJS
+                        recommends using a modular folder structure, where each module has its own directory. For
+                        example, you can have a directory for controllers, services, providers, and models. This makes
+                        it easy to find and update code, and also helps new developers understand your project's
+                        structure.
                       </p><br>
-                      <h3 style="margin-bottom: 10px;">3. Comments</h3>
+                      <h3 style="margin-bottom: 10px;">3. Use Dependency Injection</h3>
                       <p>
-                        Comments are an important part of clean code. They provide explanations and context for the
-                        code, making it easier to understand and maintain. However, it is important to keep comments
-                        concise and avoid over-commenting. Comments should explain why the code was written in a certain
-                        way, rather than what it is doing.
+                        NestJS uses dependency injection to manage the dependencies between modules in your application.
+                        This allows you to easily replace and update components as your application grows, making it
+                        easier to test and maintain. To use dependency injection, you can define a provider for each
+                        service or class that you want to use in your application, and then inject that provider into
+                        the modules that need it.
                       </p><br>
-                      <h3 style="margin-bottom: 10px;">4. Consistent Indentation and Formatting</h3>
+                      <h3 style="margin-bottom: 10px;">4. Use Guards and Interceptors</h3>
                       <p>
-                        Having consistent indentation and formatting is crucial for writing clean code. Use a consistent
-                        style for your code, such as using 4 spaces for indentation and using camelCase for variables.
-                        This helps to make the code more readable and reduces the chance of bugs and errors.
+                        Guards and interceptors are NestJS features that allow you to add additional functionality to
+                        your application's routes. Guards are used to authorize or block access to a route, while
+                        interceptors can modify the request and response objects before and after the route is
+                        processed.
                       </p><br>
-                      <h3 style="margin-bottom: 10px;">5. Modular Design</h3>
+                      <h3 style="margin-bottom: 10px;">5. Write Tests</h3>
                       <p>
-                        Modular design involves breaking down code into smaller, self-contained modules. This makes the
-                        code easier to understand, test, and maintain, as each module has a specific purpose and can be
-                        updated or changed independently of the rest of the code.
+                        NestJS makes it easy to write tests for your application using Jest. Writing tests can help you
+                        catch bugs early and ensure that your application works as expected. It's a good idea to write
+                        tests for each module and route in your application, and to run your tests frequently during
+                        development to catch any regressions.
                       </p><br>
-                      <h3 style="margin-bottom: 10px;">6. Code Reusability</h3>
+                      <h3 style="margin-bottom: 10px;">6. Use Middleware</h3>
                       <p>
-                        Code reusability is an important principle of clean code. Try to write code that can be used in
-                        multiple places, rather than repeating the same code in different parts of the application. This
-                        helps to reduce the size of the code and makes it easier to maintain and update.
+                        Middleware is a feature of NestJS that allows you to add additional functionality to your
+                        application's request/response cycle. You can use middleware to add logging, error handling, or
+                        other functionality to your application. NestJS comes with a variety of built-in middleware, and
+                        you can also create your own middleware functions.
                       </p><br>
-                      <h3 style="margin-bottom: 10px;">7. Error Handling</h3>
+                      <h3 style="margin-bottom: 10px;">7. Use Validation</h3>
                       <p>
-                        Error handling is an important part of writing clean code. Make sure to handle errors in a
-                        consistent and predictable way, and provide clear error messages to help with debugging. Avoid
-                        using generic error messages, such as "An error occurred," as they provide no information about
-                        what went wrong.
+                        NestJS provides a powerful validation framework that allows you to validate incoming requests
+                        and responses. You can use decorators to define the expected format of incoming data, and NestJS
+                        will automatically validate the data and return errors if it doesn't match the expected format.
                       </p>
 
-                      <blockquote class=" quote">If you want users to like your software, you should design it to behave
-                        like a likable person...and via Angular it is possible.
+                      <blockquote class=" quote">If debugging is the process of removing bugs, then programming must be
+                        the process of putting them in.
                         <footer class="quote-author">
-                          <span>Alan Cooper</span>
+                          <span>Sam Redwine</span>
                         </footer>
                       </blockquote>
 
                       <p>
-                        By following these principles, you can write clean and maintainable code that is easier to
-                        understand, debug, and update. Clean code makes it easier to build high-quality software that
-                        meets the needs of your users.
+                        In conclusion, NestJS is a powerful and flexible framework that can help you build scalable and
+                        maintainable server-side applications. By following these best practices, you can write better
+                        code, make your application more secure, and improve the overall quality of your application.
                       </p>
                     </div>
                   </div>
@@ -206,7 +212,7 @@
                 <div class="date-author">
                   <span class="entry-date">
                     <a href="#" rel="bookmark">
-                      <i class="far fa-clock"></i> <span class="entry-date"> 03 Oct 2022</span>
+                      <i class="far fa-clock"></i> <span class="entry-date"> 25 Aug 2022</span>
                     </a>
                   </span>
                   <span class="author vcard">
@@ -217,11 +223,11 @@
 
               <div class="post-tags">
                 <div class="tags">
-                  <a href="#" rel="tag">SOLID</a>
-                  <a href="#" rel="tag">KISS</a>
-                  <a href="#" rel="tag">SLAP</a>
-                  <a href="#" rel="tag">DRY</a>
-                  <a href="#" rel="tag">CLEAN CODE</a>
+                  <a href="#" rel="tag">NestJs</a>
+                  <a href="#" rel="tag">Backend</a>
+                  <a href="#" rel="tag">Coding</a>
+                  <a href="#" rel="tag">Best Practices</a>
+                  <a href="#" rel="tag">Software</a>
                 </div>
               </div>
             </div>
